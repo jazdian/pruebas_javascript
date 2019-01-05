@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Codigos de Javascript</title>
+
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+<body>
+    
+    <br><br>
+    <div class="container">
+
+        <table class="highlight tab1">
+            <thead>
+                <tr><th>Id</th><th>Col2</th><th>Col3</th></tr>
+            </thead>
+        
+            <tbody>
+                <tr>
+                    <td>ID1</td>
+                    <td>R1C2</td>
+                    <td>R1C3</td>
+                </tr>
+                <tr>
+                    <td>ID2</td>
+                    <td>R2C2</td>
+                    <td>R2C3</td>
+                </tr>
+                <tr>
+                    <td>ID3</td>
+                    <td>R3C2</td>
+                    <td>R3C3</td>
+                </tr>
+            </tbody>
+        
+        </table>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <div class="row">
+            <form class="col s12">
+            <div class="row">
+                <div class="input-field col s4">
+                    <i class="material-icons prefix">account_circle</i>
+                    <input id="icon_prefix" type="text" class="validate">
+                    <label for="icon_prefix">First Name</label>
+                </div>
+                <div class="input-field col s4">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="icon_telephone" type="tel" class="validate">
+                    <label for="icon_telephone">Telephone</label>
+                </div>
+                <div class="input-field col s4">
+                    <select id="my_select">
+                        <option value="0" disabled selected>Choose your option</option>
+                        <option value="1">Option 1</option>
+                        <option value="2">Option 2</option>
+                        <option value="3">Option 3</option>
+                    </select>
+                    <label>Materialize Select</label>
+                </div>
+                
+                <button id="carga_datos" class="btn waves-effect waves-light" type="submit" name="action">Cargar Datos
+                    <i class="material-icons right">send</i>
+                </button>
+
+                <button id="update_datos" data-target="modal1" class="btn waves-effect waves-light modal-trigger" type="submit" name="action2">Actualizar
+                    <i class="material-icons right">save</i>
+                </button>            
+
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="container">
+        
+        <div class="row">
+            <h5>Tabla generada desde el servidor</h5>
+
+            <div id="MiTablaServer" style="display: none; ">
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+    <div class="modal-content">
+        <h4>Datos Guardados</h4>
+        
+        <p id="nombre"></p>
+        <p id="telefono"></p>
+        <p id="val_opt"></p>
+        <p id="text_opt"></p>
+
+    </div>
+    <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat">Agree</a>
+    </div>
+    </div>
+
+
+    <br>
+    <br>
+    <br>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+    <!-- <script src="main.js"></script> -->
+
+</body>
+</html>
